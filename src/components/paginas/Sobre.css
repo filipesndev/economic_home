@@ -1,0 +1,200 @@
+.sobre {
+    background-image: url(../../assets/images/SobreTopImg.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sobre_title {
+    width: 100%;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre_title > h1 {
+    font-size: 87px;
+    margin-left: 100px;
+    border-bottom: solid 5px #44c767;
+    border-radius: 5px;
+    font-weight: 100;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.22);
+    font-style: italic;
+}
+
+.sobre_container {
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    padding: 50px 0px;
+    border-top: solid 5px #44c767;
+    border-bottom: solid 5px #44c767;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre_container-up, .sobre_container-down {
+    max-width: 1300px;
+    padding: 20px 20px;
+}
+
+.sobre_container-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid: 
+    "text1   text1    text1"
+    "imgbox1 imgbox2  imgbox3"
+    "text2   text2    text2"
+    ;
+    gap: 30px;
+    justify-items: center;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.imgbox1 {
+    grid-area: imgbox1;
+}
+
+.imgbox2 {
+    grid-area: imgbox2;
+}
+
+.imgbox3 {
+    grid-area: imgbox3;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.image_box {
+    width: 340px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #44c767;
+    opacity: 0.9;
+    position: absolute;
+    width: 340px;
+    bottom: 0px;
+    z-index: 2;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+.overlay_boximg {
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #44c767;
+    opacity: 0.9;
+    position: absolute;
+    width: 340px;
+    z-index: 1;
+    bottom: -210px;
+    transition: all 1s;
+    font-weight: 400;
+}
+
+.image_box:hover .caption {
+    bottom: -40px;
+}
+
+.image_box:hover .overlay_boximg {
+    bottom: 0px;
+}
+
+.sobre_container-up p {
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: justify;
+}
+
+.sobre_container-down > h1 {
+    font-size: 50px;
+    margin-left: 20px;
+    border-bottom: solid 5px #44c767;
+    border-radius: 5px;
+    font-weight: 100;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.22);
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.sobre_container-down p {
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: justify;
+}
+
+@media (max-width: 1180px) {
+    .sobre {
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 1070px) {
+    .sobre {
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 1070px) {
+    .sobre_container-up {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid: 
+        "text1"
+        "imgbox1" 
+        "imgbox2"  
+        "imgbox3"
+        "text2"
+        ;
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .image_box + .image_box {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 840px) {
+    .sobre_title {
+        height: 300px;
+    }
+
+    .sobre_title > h1 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .sobre_container-down > h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    .sobre {
+        background-size: 250%;
+        background-position-x: -250px;
+    }
+}

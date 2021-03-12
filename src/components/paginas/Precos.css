@@ -1,0 +1,133 @@
+.precos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../../assets/images/Precos.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.precos > img {
+    display: none;
+}
+
+.precos_card {
+    position: absolute;
+    max-width: 500px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(50, 50, 50, 0.27);
+    -moz-box-shadow:    10px 10px 10px 0px rgba(50, 50, 50, 0.27);
+    box-shadow:         10px 10px 10px 0px rgba(50, 50, 50, 0.27);
+}
+
+.precos_card-top {
+    background-color:  #44c767;
+    border-top-right-radius: 15px;
+}
+
+.precos_card-top h1 {
+    font-weight: 200;
+    font-size: 40px;
+    padding: 30px 30px 10px 30px;
+}
+
+.precos_card-top h2 {
+    font-size: 50px;
+    font-weight: 300;
+    padding: 0px 30px 15px 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.precos_card-middle {
+    padding: 20px 30px 10px 30px;
+}
+
+.precos_card-middle ul {
+    padding-inline-start: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.precos_card-middle li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.precos_card-middle li + li {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: solid 2px #44c767;
+}
+
+.precos_card-middle li > i {
+    margin-right: 10px;
+    color: whitesmoke;
+}
+
+.precos_card-bottom {
+    width: 100%;
+    padding: 40px 30px 40px 30px;
+    background-color: #44c767;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.precos_card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precos_button {
+	background-color: #27e947;
+	border-radius:9px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:22px 40px;
+    text-decoration:none;
+    transition: all 0.5s;
+}
+.precos_button:hover {
+    background-color:#5cf012;
+    color: white;
+}
+.precos_button:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-height: 700px) {
+    .precos {
+        height: 850px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .precos {
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .precos_card {
+        max-width: 300px;
+    }
+
+    .precos_card-top h1 {
+        font-size: 30px;
+        padding: 15px 10px 5px 10px;
+    }
+
+}

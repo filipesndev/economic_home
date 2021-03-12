@@ -1,0 +1,114 @@
+.header {
+    background-color: #3CB371;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left {
+    position: relative;
+}
+
+.header_left-logo{
+    max-width: 300px;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.header_left-login {
+    display: none;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
+.header_right a + a {
+    margin-left: 10px;
+}
+
+.header_right-button {
+    height: 65px;
+    text-align: center;
+	background-color:#3CB371;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:20px 40px;
+    text-decoration:none;
+    transition: all 1s;
+}
+.header_right-button:hover {
+    background-color:#2E8B57;
+    color: white;
+}
+.header_right-button:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width:1060px) {
+
+    .header_right-button {
+        font-size: 17px;
+        height: 45px;
+        padding: 8px 15px;
+    }
+
+}
+
+@media (max-width:1000px) {
+
+    .header {
+        flex-direction: column;
+        padding-bottom: 30px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .header_left-logo {
+        margin-left: 0;
+        max-width: 200px;
+    }
+
+    .header_left-login {
+        background-color:#44c767;
+        border-radius:12px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:15px 15px;
+        text-decoration:none;
+        position: absolute;
+        top: -8px;
+        right: 10px;
+    }
+    .header_left-login:hover {
+        background-color:#2E8B57;
+        color: white;
+    }
+    .header_left-loginicon {
+        font-size: 17px;
+        color: white;
+    }
+
+    .header_right {
+        margin-left: 30px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .login {
+        display: none;
+    }
+
+}

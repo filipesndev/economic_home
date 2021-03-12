@@ -1,0 +1,125 @@
+.contato_top {
+    color: whitesmoke;
+    width: 100%;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../assets/images/Contato.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contato_top h1{
+    font-size: 87px;
+    margin-left: 100px;
+    border-bottom: solid 5px #44c767;
+    border-radius: 5px;
+    font-weight: 100;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.22);
+    font-style: italic;
+}
+
+.contato_top h2{
+    font-size: 35px;
+    margin-left: 150px;
+    font-weight: 300;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.22);
+    font-style: italic;
+}
+
+.contato_bottom {
+    margin: 0 auto;
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: 
+    "a1 a2"
+    "a3 a4"
+    ;
+    gap: 50px;
+    justify-content: space-evenly;
+    border-top: solid 5px #44c767;
+    border-bottom: solid 5px #44c767;
+    overflow-x: hidden;
+}
+
+.contato_bottom-box {
+    max-width: 400px;
+}
+
+.contato_bottom-box h1 {
+    font-size: 40px;
+    border-bottom: solid 2px #44c767;
+    font-weight: 100;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.22);
+    font-style: italic;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+}
+
+.contato_bottom-box h1 > i {
+    margin-right: 15px;
+}
+
+.contato_bottom-box h2 {
+    font-size: 20px;
+    margin-left: 150px;
+    font-weight: 300;
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+@media (max-width: 840px) {
+    .contato_top {
+        height: 300px;
+    }
+
+    .contato_top  h1 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .contato_top h2 {
+        font-size: 20px;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 630px) {
+    .contato_bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid: 
+        "a1" 
+        "a2"
+        "a3" 
+        "a4"
+        ;
+        gap: 30px;
+    }
+
+    .contato_bottom h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contato_top h1 {
+        font-size: 30px;
+    }
+}
